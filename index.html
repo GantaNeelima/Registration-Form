@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible"
+		content="IE=edge">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0">
+	<title>
+		Online Yoga Class Registration Form
+	</title>
+
+	<style>
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+			text-align: center;
+            background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url("https://play-lh.googleusercontent.com/vOpMqY5S3wzVi6-NGZs_gKgzbCX__iGZUdFyCtLnKYlunr-Sbeq43l5Ras14WnwUb6NG");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: rgba(0, 0, 0, 0.25);
+		}
+        
+		h1{
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 40px;
+			padding-top: 20px;
+		}
+		form {
+			max-width: 500px;
+			margin: 50px auto;
+			padding: 30px 20px;
+			box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+		}
+		.one {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+		.one label {
+			display: block;
+			margin-bottom: 10px;
+		}
+		.one input,
+		.one select,
+		.one textarea {
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			padding: 10px;
+			display: block;
+			width: 95%;
+		}
+		.one input[type="radio"],
+		.one input[type="checkbox"] {
+			display: inline-block;
+			width: auto;
+		}
+		button {
+			background-color: #6fd5e0;
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			font-size: 21px;
+			display: block;
+			width: 100%;
+			margin-top: 50px;
+			margin-bottom: 20px;
+		}
+		/* Add a hover effect to the submit button */
+		button:hover {
+    		background-color: white; /* Change the background color on hover */
+    		color:black; /* Change the text color on hover */
+    		transition: background-color 0.2s, color 0.2s; /* Add a smooth transition */
+		}
+
+	</style>
+</head>
+
+<body>
+	<h1>Online Yoga Class Registration Form</h1>
+    	<form id="form">
+		<div class="one">
+			<label for="name" id="lname">
+				Name
+			</label>
+			<input type="text"
+				id="name"
+				placeholder="Enter your name" />
+		</div>
+
+		<div class="one">
+			<label for="email" id="lemail">
+				Email
+			</label>
+			<input type="email"
+				id="email"
+				placeholder="Enter your email" />
+		</div>
+
+		<div class="one">
+			<label for="pno" id="lpno">
+				Phone Number
+			</label>
+			<input type="tel"
+				id="pno"/>
+		</div>
+		<div class="one">
+			<label for="dob" id="ldob">
+				Date of Birth
+			</label>
+            <input type="date"
+				id="dob"
+				placeholder="MM-DD-YYYY" />
+		</div>
+
+		<div class="one">
+			<label>
+				Gender
+			</label>
+			
+				<input type="radio"
+					id="gender"
+					name="recommed">Male</input>
+                    <label for="gender">
+			</label>
+			<label for="gender">
+				<input type="radio"
+					id="gender"
+					name="recommed">Female</input>
+			</label>
+			<label for="gender">
+				<input type="radio"
+					id="gender"
+					name="recommed">Other</input>
+			</label>
+		</div>
+
+		<div class="one">
+			<label>Schedule Preference
+			</label>
+			<label for="a">
+				<input type="checkbox"
+					name="inp">Morning Session - 9:00AM to 11:00AM</input></label>
+			<label for="b">
+				<input type="checkbox"
+					name="inp">Morning Session - 11:00AM to 1:00PM</input></label>
+			<label for="c">
+				<input type="checkbox"
+					name="inp">Afternoon Session - 5:30PM to 7:30PM</input></label>
+			<label for="d">
+				<input type="checkbox"
+					name="inp">Afternoon Session - 7:30PM to 9:30PM</input></label>
+		</div>
+        <div class="one">
+			<label>Class Level
+			</label>
+			<label for="e">
+				<input type="checkbox"
+					name="inp">Level 1 - Beginner Class</input></label>
+			<label for="f">
+				<input type="checkbox"
+					name="inp">Level 2 - Intermediate Class</input></label>
+			<label for="g">
+				<input type="checkbox"
+					name="inp">Level 3 - Advanced Class</input></label>
+		</div>
+        <div class="one">
+			<label>Session Packages
+			</label>
+			<label for="h">
+				<input type="radio"
+					name="inp">Unlimited Monthly<small> ($150.00 for each month)</small></input></label>
+			<label for="i">
+				<input type="radio"
+					name="inp">10 Sessions<small> ($90.00 for each month)</small></input></label>
+			<label for="j">
+				<input type="radio"
+					name="inp">6 Sessions<small> ($50.00 for each month)</small></input></label>
+            <label for="j">
+                <input type="radio"
+                    name="inp">3 Sessions<small> ($30.00 for each month)</small></input></label>
+		</div>
+
+		<button type="submit" value="submit">
+			Submit
+		</button>
+	</form>
+</body>
+</html>
